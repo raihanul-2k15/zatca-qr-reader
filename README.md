@@ -17,8 +17,32 @@ This tool (with the desktop app) can also be used by non technical people to ext
 | Decode from base64 string          | :heavy_check_mark: |
 | Decode from a PNG/JPG image file   | :heavy_check_mark: |
 | Extract and decode from a PDF file | :heavy_check_mark: |
-| Extract and decode from a XML file | :heavy_check_mark: |
+| Extract and decode from a XML file |                    |
 
 ### Desktop App
 
 Coming Soon :smiley:
+
+## Usage
+
+1. Download the binary from the [latest release](https://github.com/raihanul-2k15/zatca-qr-reader/releases/latest)
+1. Rename the binary if needed
+1. Open a shell or command prompt and run the binary with arguments
+
+```shell
+# Decode directly from Base64 encoded TLV
+decode_qr_code.exe ARNBY21lIFdpZGdldOKAmXMgTFREAg8zMT...
+
+# Extract and decode from a PDF invoice
+decode_qr_code.exe path/to/invoice.pdf
+
+# Extract and decode from a png or jpg image
+decode_qr_code.exe path/to/qr.png
+```
+
+## Build
+
+```shell
+# Build platform: linux, Target platform: windows
+GOOS=windows GOARCH=amd64 go build -ldflags="-X main.version=$(git describe --tags --abbrev=0)" ./cmd/decode_zatca_qr/
+```
