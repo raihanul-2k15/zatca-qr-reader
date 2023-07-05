@@ -44,5 +44,5 @@ decode_qr_code.exe path/to/qr.png
 
 ```shell
 # Build platform: linux, Target platform: windows
-GOOS=windows GOARCH=amd64 go build -ldflags="-X main.version=$(git describe --tags --abbrev=0)" ./cmd/decode_zatca_qr/
+GOOS=windows GOARCH=amd64 go build -ldflags="-X main.VERSION=$(git describe --tags --abbrev=0)" ./cmd/decode_zatca_qr/
 ```
