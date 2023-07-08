@@ -12,12 +12,12 @@ This tool (with the desktop app) can also be used by non technical people to ext
 
 ### CLI Program
 
-| Feature                            | Implemented        |
-| ---------------------------------- | ------------------ |
-| Decode from base64 string          | :heavy_check_mark: |
-| Decode from a PNG/JPG image file   | :heavy_check_mark: |
-| Extract and decode from a PDF file | :heavy_check_mark: |
-| Extract and decode from a XML file |                    |
+| Feature                             | Implemented        |
+| ----------------------------------- | ------------------ |
+| Decode from base64 string           | :heavy_check_mark: |
+| Decode from a PNG/JPG image file    | :heavy_check_mark: |
+| Extract and decode from a PDF file  | :heavy_check_mark: |
+| Extract and decode from an XML file | :heavy_check_mark: |
 
 ### Desktop App
 
@@ -35,6 +35,9 @@ decode_qr_code.exe ARNBY21lIFdpZGdldOKAmXMgTFREAg8zMT...
 
 # Extract and decode from a PDF invoice
 decode_qr_code.exe path/to/invoice.pdf
+
+# Extract and decode from an XML invoice
+decode_qr_code.exe path/to/invoice.xml
 
 # Extract and decode from a png or jpg image
 decode_qr_code.exe path/to/qr.png
